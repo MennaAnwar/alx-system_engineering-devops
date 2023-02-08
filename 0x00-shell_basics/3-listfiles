@@ -1,2 +1,2 @@
-
-changes the working directory to home directory
+#!/bin/bash
+ls -l

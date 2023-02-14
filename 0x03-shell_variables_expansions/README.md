@@ -45,6 +45,8 @@ The script should display the number in base 16, followed by a new line
 [15-rot13](./101-rot13) - Write a script that encodes and decodes text using the rot13 encryption.
 
 [16-odd](./102-odd) - Write a script that prints every other line from the input, starting with the first line.
+
+
 [17-water and stir](./103-water_and_stir) - Write a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result.
 
 WATER is in base water

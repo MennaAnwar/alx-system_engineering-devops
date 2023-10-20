@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Script to reload Gunicorn configurations and restart workers
-# without killing master processes
-pkill -HUP gunicorn
+# Gracefully reloads Gunicorn.
+
+ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP

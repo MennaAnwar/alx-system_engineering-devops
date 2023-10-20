@@ -63,7 +63,7 @@ server {
         }
 
         location /static {
-                proxy_pass http://0.0.0.0:5003;
+                alias web_dynamic/static/;
         }
 
         location / {

@@ -9,9 +9,6 @@ rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
 
         server_name 100.26.246.88;
 add_header X-Served-By $hostname;
-        location / {
-                try_files $uri $uri/ =404;
-        }
 
 	location /airbnb-onepage/ {
 		include proxy_params;
@@ -23,8 +20,9 @@ add_header X-Served-By $hostname;
 		proxy_pass http://0.0.0.0:5001/number_odd_or_even/;
 	}
 
-	location /static {
-        }
+    location /static {
+        proxy_pass http://127.0.0.1:5003;
+    }
 
 	location /api/ {
 		include proxy_params;

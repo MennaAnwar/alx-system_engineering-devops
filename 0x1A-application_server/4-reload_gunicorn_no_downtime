@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Gracefully updates gunicorn workers
 
-grep gunicorn | xargs kill -HUP
+grep gunicorn | pkill gunicorn
